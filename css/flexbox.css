@@ -1,0 +1,54 @@
+*/Flexbox for header
+Logo in top left corner, Meghs name in center and nav links in a row, spread out
+/*
+
+.container-header {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: flex-start;
+
+}
+
+.item-3{
+order: 0;
+align-self: flex-end;
+flex-grow:1;
+}
+
+.item-4{
+order: 0;
+align-self: flex-end;
+}
+
+.item-5{
+order: 0;
+align-self: flex-end;
+}
+
+.item-1{
+order:-2;
+}
+
+.item-2{
+order: -1;
+}
+
+*/Flexbox for gallery/*
+    
+
+.container-gallery{
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 200px;
+    justify-content: space-between;
+    background-color: bisque;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+
+

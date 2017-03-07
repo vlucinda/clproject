@@ -1,0 +1,146 @@
+
+/***********************
+GENERAL
+************************/
+body {
+    font-family: 'lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+#wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+
+/***********************
+HEADING
+***********************/
+.main-header{
+    max-height: 200px; 
+    border: none;
+    background-color: lightgrey;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'lato', sans-serif;
+    margin: 15px 0;
+    font-size: 1.75em;
+    font-weight: normal;
+    line-height: 0.8em;
+    text-align: center;
+    color: white;
+    padding: 25px 0 10px 0;
+}
+
+#logo {
+    align-items: flex-start;
+    vertical-align: top;
+    max-height: 150px;
+    object-fit: contain;
+    align: left;
+}
+
+
+    
+.clearfix{
+    overflow: auto;
+    }
+
+nav ul {
+    list-style: none; 
+    display: inline-block;
+    color: white;
+    align-self:right;
+}
+   
+/* Display: inline-block is supposed to make the navigation list items display in a horizontal row, but it's not happening. */ 
+
+nav li {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 15px 10px;
+    font-size: 1em;
+    float:right;
+    margin-left: 20px;
+    
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 80;
+    color: white;
+    padding: 15px 10px;
+    font-size: 1em;
+}
+
+/***************************
+BODY
+****************************/
+img {
+    max-width: 45%;
+    
+}
+#primary-content{}
+
+.gallery {
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+.container-gallery {
+    align-items: center;
+    width: 45%;
+    margin: 2.5%;
+    background-color: antiquewhite;   
+    
+}
+
+
+
+/************
+ CSS flexbox
+************/
+            
+.container{
+    display: flex;
+}
+.item{
+    
+    
+}
+
+
+/***********************
+Images
+***********************/
+.fade{
+   vertical-align: bottom;
+    align-self: stretch;
+}
+
+/************************
+    Footer
+************************/
+.main-footer {
+    display: block;
+    border: none;
+    background-color: darkgray;
+    font-size: 0.75em;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    color: white;
+    }
+   
+.social-icon {
+    margin: 0 5px;   
+}
