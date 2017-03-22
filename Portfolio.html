@@ -1,50 +1,106 @@
 <!DOCTYPE html>
-<html>
-  <head >
+ <html>
+   <head >
     <meta charset="utf-8">
     <title>MZ3 Photography</title>
       <link rel="stylesheet" href="css/normalize.css">
-      <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="flexbox.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+       <link rel="stylesheet" href="css/portfolio.css">
+       
   </head>
   <body>
-   <div class="container-header">
-      <header class="main-header">
-      <a href="index.html">
-      <div class="item-1 item"> <h1 class="item-1 item">Megh Zahrndt | Photographer</h1></div>
-      </a>
-      <div class="item-2 item"><img src="img/logo.jpg" id="logo" class="item-2 item"></div>
-    <nav>
-        <ul style= list-style: none;>
-            <div class="item-3 item"><li><a href="index.html">Portfolio</a></li></div>
-            <div class="item-4 item"><li><a href="about.html">About</a></li></div>
-          <div class="item-5 item>"><li><a href="contact.html">Contact</a></div>
+  
+      <!--Navigation-->    
+   <div class="container">
+       <header class="page-header">
+        <div class="row">
+         <div class="col-sm-1"></div>      
+          <div class="col-sm-4"><img src="img/logo.jpg" id="logo"></div>
+     <div class="row"> 
+         <h1>Megh Zahrndt | Photographer</h1></div>
+        <ul class= "nav nav-pills">
+            <div class="col-sm-2 pull-right"> <li><a href="Portfolio.html">Portfolio</a></li></div>
+            <div class="col-sm-2 pull-right"><li><a href="about.html">About</a></li></div>
+           <div class="col-sm-2 pull-right"> <li><a href="contact.html">Contact</a></li></div>
         </ul>
-    </nav>
+        
+     </div>
     </header>
+</div>        
+<!--End Navigation-->  
+
+      
+<!---Lightbox--->
+<section id="lightbox">
+       <div class="row">
+  <div class="column">
+    <img src= "img/10900010_10155055151720654_7977610308341866949_o.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/12440257_10153896245030042_8939402848177533758_o.jpg"  onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/13422209_10154105425980042_637286719114599335_o.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/10438955_10152520289525042_4199434483598493940_n.jpg"  onclick="openModal();currentSlide(4)" class="hover-shadow">
+  
 </div>
 
-       
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
 
-    <section class="gallery">
-        <h1> Portfolio</h1>
-        <div class="container-gallery">
-            <div class="item"><h2> Portraits</h2> 
-                <img src="img/10900010_10155055151720654_7977610308341866949_o.jpg" > </div>
-            <div class="item 1"><h2>Art Photography </h2> 
-                <img src="img/12440257_10153896245030042_8939402848177533758_o.jpg" > </div>
-            <div class="item 2"><h2>For Your Business</h2>
-                <img src="img/13422209_10154105425980042_637286719114599335_o.jpg" > </div>
-            <div class="item 3"> <h2>Landscapes</h2>
-                <img src="img/10438955_10152520289525042_4199434483598493940_n.jpg" > </div>
-            <div class="item 4"> <h2>Storytelling</h2>
-                <img src="img/11137149_10153142843225042_6450300974985831924_n.jpg"> </div>
-        </div>  
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+        <img src="img/10900010_10155055151720654_7977610308341866949_o.jpg"  style="width:100%">
+    </div>
 
-    </section>
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+        <img src="img/12440257_10153896245030042_8939402848177533758_o.jpg" style="width:100%">
+    </div>
 
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+        <img src="img/13422209_10154105425980042_637286719114599335_o.jpg" style="width:100%">
+    </div>
 
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+        <img src="img/10438955_10152520289525042_4199434483598493940_n.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/10900010_10155055151720654_7977610308341866949_o.jpg" onclick="currentSlide(1)" alt="Portraits">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/12440257_10153896245030042_8939402848177533758_o.jpg" onclick="currentSlide(2)" alt="Art Phtotgraphy">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/13422209_10154105425980042_637286719114599335_o.jpg" onclick="currentSlide(3)" alt="For Your Business">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/10438955_10152520289525042_4199434483598493940_n.jpg" onclick="currentSlide(4)" alt="Nature">
+    </div>
+  </div>
+</div>  
+    </div>
+      </section> 
+<!---End Lightbox--->
+         
+<!---Footer--->
    <footer class="main-footer">
       <a href="http://www.facebook.com"><img src="facebook-wrap.png" alt="facebook logo" class="social-icon"> </a>
       <a href="http://www.twitter.com"><img src="twitter-wrap.png" alt="twitter logo"  class="social-icon"> </a>
@@ -52,5 +108,9 @@
          <a href="mailto:megh.zahrndt@gmail.com"><img src="mail.png" alt="envelope"  class="social-icon"> </a>
       <p>&copy; 2017 Megh Zahrndt</p>
     </footer>
+
+<!---JavaScript Info--->
+  <script type="text/javascript" src="js/lightbox.js"></script>           
+
   </body>
 </html>

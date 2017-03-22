@@ -1,88 +1,86 @@
-
 /***********************
 GENERAL
 ************************/
 body {
     font-family: 'lato', sans-serif;
     background-color: linear-gradient (down, #999966,  #b8b894, #e0e0d1, #f5f5f0);
+    padding-top: 0;
 }
 
 a{
     text-decoration: none;
 }
-#wrapper {
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0 5%;
-}
-.container{
-    
-}
+
+
 
 
 /***********************
 HEADING
 ***********************/
+div.container{
+    width=100%;
+    padding-top: 0;
+    margin: auto;
+}
+
 .page-header{
     max-height: 300px; 
     border: none;
     background-color: lightgray;
     width: 100%;
+    padding: 0;
 }
 
 h1 {
     font-family: 'lato', sans-serif;
-    margin: 15px 0;
+    margin: 0;
     font-size: 1.75em;
     font-weight: normal;
     line-height: 0.8em;
     text-align: center;
     color: white;
-    padding: 25px 0 10px 0;
+    padding:0 0 0 0;
 }
 
 #logo {
     align-items: flex-start;
-    vertical-align: top;
-    max-height: 150px;
-    object-fit: contain;
-    align: left;
+    vertical-align: center;
+    max-height: 275px;
+    object-fit: stretch;
+    padding: 20px 0px 1px 0px;
 }
 
-
-    
-.clearfix{
-    overflow: auto;
-    }
-
-nav ul {
+.nav ul {
     list-style: none; 
     display: inline-block;
     color: white;
-    align-self:right;
+    align-self:center;
+    flex-direction: column-reverse;
+    flex-basis: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
    
-/* Display: inline-block is supposed to make the navigation list items display in a horizontal row, but it's not happening. */ 
 
-nav li {
-    display: inline-block;
+.nav li {
+    display: inline-flex;
     text-decoration: none;
     text-align: center;
     color: white;
-    padding: 15px 10px;
+    padding: 0;
     font-size: 1em;
-    float:right;
     margin-left: 20px;
+    margin-right: 20px;
     
 }
 
-nav a {
+.nav a {
     display: inline-block;
     text-decoration: none;
     text-align: center;
     font-weight: 80;
     color: white;
-    padding: 15px 10px;
+    padding: 0;
     font-size: 1em;
 }
 
@@ -94,29 +92,11 @@ img {
     
 }
 
-.gallery {
-    margin: 0;
-    padding:0;
-    list-style: none;
-}
-.container-gallery {
-    align-items: center;
-    width: 45%;
-    margin: 2.5%;
-    background-color: antiquewhite;   
-    
-}
 
-
-/***********************
-Slideshow -- Index page
-***********************/
-.fade{
-  
-}
 /***********************
 Lightbox -- Portfolio page
 ***********************/
+
 .row > .column {
   padding: 10px 8px 10px 8px;
   
@@ -130,6 +110,7 @@ Lightbox -- Portfolio page
 }
 
 .column {
+
   float: left;
   width: 20%; 
 }
@@ -156,9 +137,8 @@ Lightbox -- Portfolio page
   position: relative;
   background-color: black;
   margin: auto;
-
   width: 75%;
-  max-width: 1200px;
+  max-height: 650px;
 }
 
 /* The Close Button */
@@ -244,67 +224,7 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
-/************************
-    Email Form
-************************/
-label {
-    display:block;
-    margin-top:20px;
-    letter-spacing:2px;
-}
-form {
-    margin:0 auto;
-    width:459px;
-}
 
-/* Style the text boxes */
-input, textarea {
-	width:439px;
-	height:27px;
-	background:#efefef;
-	border:1px solid #dedede;
-	padding:10px;
-	margin-top:3px;
-	font-size:0.9em;
-	color:#3a3a3a;
-}
-
-textarea {
-	height:213px;
-	background:url(images/textarea-bg.jpg) right no-repeat #efefef;
-}
-
-input, textarea {
-    width:439px;
-    height:27px;
-    background:#efefef;
-    border:1px solid #dedede;
-    padding:10px;
-    margin-top:3px;
-    font-size:0.9em;
-    color:#3a3a3a;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
-}
-
-input:focus, textarea:focus {
-    border:1px solid #97d6eb;
-}
-
-#submit {
-    width:127px;
-    height:38px;
-    background:url(images/submit.jpg);
-    text-indent:-9999px;
-    border:none;
-    margin-top:20px;
-    cursor:pointer;
-}
-
-#submit:hover {
-	    opacity:.9;
-	}
 
 /************************
     Footer
@@ -313,7 +233,7 @@ input:focus, textarea:focus {
     display: block;
     border: none;
     background-color: darkgray;
-    font-size: 0.75em;
+    font-size:1em;
     text-align: center;
     padding-bottom: 25px;
     padding-top: 25px;
@@ -321,5 +241,6 @@ input:focus, textarea:focus {
     }
    
 .social-icon {
-    margin: 0 5px;   
+    margin: 0 5px; 
+    padding-bottom: 5px;
 }
