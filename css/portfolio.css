@@ -60,6 +60,7 @@ h1 {
     max-height: 200px;
     object-fit: stretch;
     padding: 20px 0px 1px 0px;
+    margin-left: 20px;
 }
 
 .nav ul {
@@ -108,11 +109,11 @@ h1 {
 /***************************
 BODY
 ****************************/
-img {
-    max-width: 45%;
-    
-}
 
+
+section img{
+    max-width: 45;
+}
 
 /***********************
 Lightbox -- Portfolio page
@@ -124,12 +125,16 @@ Lightbox -- Portfolio page
 }
   
 
-.row:after {
+section .row:after {
   content: "";
   display: table;
   clear: both;
   padding-bottom: 20px;
 
+}
+
+section .column{
+    max-width: 25%;
 }
 
 .column {
