@@ -119,6 +119,7 @@ label {
 form {
     margin:0 auto;
     width:459px;
+    padding: 0 10px 0 10px;
 }
 
 /* Style the text boxes */
@@ -159,10 +160,9 @@ input:focus, textarea:focus {
 #submit {
     width:127px;
     height:38px;
-    background:url(images/submit.jpg);
-    text-indent:-9999px;
     border:none;
     margin-top:20px;
+    margin-bottom: 10px;
     cursor:pointer;
 }
 
@@ -289,3 +289,4 @@ h1 {
     padding: 0;
 }
 }
+ 

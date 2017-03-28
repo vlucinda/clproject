@@ -105,7 +105,9 @@ BODY
     padding: 20px 20px 20px 20px;
     font-size: 1em;
 }
-
+section img{
+    padding: 0 0 10px 10px;
+}
 
 
 /************************
@@ -224,4 +226,10 @@ h1 {
     width: 100%;
     padding: 0;
 }
+}
+@media (max-width:400px){
+#bio {
+    flex: auto;
+    justify-content: flex-end;
+     
 }

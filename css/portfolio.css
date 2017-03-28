@@ -112,7 +112,8 @@ BODY
 
 
 section img{
-    max-width: 45;
+    max-width: 45%;
+ 
 }
 
 /***********************
@@ -326,7 +327,7 @@ Media Query max 400px
     float: left;
     max-height: 75px;
     object-fit: stretch;
-    padding: 10px 0px 1px 0px;
+    padding: 10px 0px 10px 0px;
 }
 }
 @media (max-width:400px){
