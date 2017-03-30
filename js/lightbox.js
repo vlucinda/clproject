@@ -1,3 +1,6 @@
+/**********Comments on lightbox: The first two functions call the myModal items and dictate their appearance when called. Function plus slides tells the script to move to the next numbered slide, using the SlideIndex (established in the currentslide variable) as the baseline "n". The final function tells the slideshow to repeat once it displays the last slide (when n > slides.length) and ties the captions and dots to their respective slides.**************/
+
+
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }
