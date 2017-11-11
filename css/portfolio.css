@@ -1,110 +1,23 @@
-/***********************
-GENERAL
-************************/
-body {
-    font-family: 'lato', sans-serif;
-    padding-top: 0;
-}
 
-a{
-    text-decoration: none;
-}
-
-
-/***********************
-HEADING
-***********************/
-
-
-container-fluid{
-    display: flex;
-    padding:0;
-    margin: 0;
-}
-
-.navbar-header{
-    border: none;
-    background-color: lightgray;
-    width: 100%;
-    padding: 0;
-    max-height: 250px;
-}
-
-.navbar-header a{
-    text-decoration: none;
-}
-
-h1 {
-    font-family: 'lato', sans-serif;
-    text-decoration:none;
-    margin: 0;
-    font-size: 2.50em;
-    font-weight: normal;
-    text-align: center;
-    color: white;
-
-}
-.clearfix:after{
-    overflow: auto;
-}
-
-.navbar-brand img {
-    display: flex;
-    align-items: flex-start;
-    float: top;
-    max-height: 150px;
-   padding: 5px 5px 5px 5px;
-}
-
-
-.nav a {
-    padding: 0 10px 10px 10px; 
-     list-style: none; 
-    display: inline-flex;
-    text-decoration: none;
-    font-weight: 80;
-    color: white;
-    font-size: 1.5em;
-    justify-content: space-between;
-     float: right;
-}
-/***************************
-BODY
-****************************/
-
-
- img{
-    max-width: 45%;
- 
-}
 
 /***********************
 Lightbox -- Portfolio page
 ***********************/
 
-.row > .column {
-  padding: 10px 8px 10px 8px;
-  
-}
-  
 
-section .row:after {
+.row > col-lg-3 col-sm-4 col-xs-6{
+  padding: 0 8px;
+}
+
+.row:after {
   content: "";
   display: table;
   clear: both;
-  padding-bottom: 20px;
-
 }
 
-section .column{
-    max-width: 25%;
-
-}
-
-
-.column {
+.col-lg-3 col-sm-4 col-xs-6{
   float: left;
-  width: 25%; 
+  width: 25%;
 }
 
 /* The Modal (background) */
@@ -112,28 +25,24 @@ section .column{
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
   background-color: black;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: black;
+  background-color: #fefefe;
   margin: auto;
-  width: 75%;
-  max-height: 650px;
-
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
 }
-
 
 /* The Close Button */
 .close {
@@ -155,7 +64,6 @@ section .column{
 .mySlides {
   display: none;
 }
- 
 
 /* Next & previous buttons */
 .prev,
@@ -199,11 +107,9 @@ section .column{
 .caption-container {
   text-align: center;
   background-color: black;
-  padding: 8px 8px;
+  padding: 2px 16px;
   color: white;
-    font-size: 1.75em;
 }
-
 
 img.demo {
   opacity: 0.6;
@@ -221,130 +127,3 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
-
-
-/************************
-    Footer
-************************/
-.main-footer {
-    display: block;
-    border: none;
-    background-color: darkgray;
-    font-size:1em;
-    text-align: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    color: white;
-    }
-   
-.social-icon {
-    margin: 0 5px; 
-    padding-bottom: 5px;
-}
-
-/***********************
-Media Query max 991px
-***********************/
-@media (max-width:991px){
-    .navbar-header{
-    max-height: 200px; 
-    border: none;
-    background-color: lightgray;
-    width: 100%;
-    padding: 0;
-}
-}
-@media (max-width:991px){
-.navbar-brand img{
-    align-items: flex-start;
-    float: left;
-    max-height: 150px;
-    object-fit: stretch;
-    padding: 5px 5px 5px 5px;
-}
-}
-/***********************
-Media Query max 767px
-***********************/
-@media (max-width:767px){
-    .navbar-header{
-    max-height: 200px; 
-    border: none;
-    background-color: lightgray;
-    width: 100%;
-    padding: 0;
-}
-}
-@media (max-width:767px){
-    h1{
-        font-size: 1.75em
-    }
-    
-}
-@media (max-width:767px){
-.navbar-brand img {
-    align-items: flex-start;
-    float: left;
-    max-height: 150px;
-    object-fit: stretch;
-    padding: 5px 5px 5px 5px;
-}
-}
-
-
-/***********************
-Media Query max 400px
-***********************/
-@media (max-width:400px){
-.navbar-brand img {
-    align-items: flex-start;
-    float: left;
-    max-height: 100px;
-    object-fit: stretch;
-    padding: 5px 5px 5px 5px;
-}
-}
-@media (max-width:400px){
-h1 {
-    font-size: 1.2em;
-    justify-content: center;
-    padding-left: 10px;
-}
-}
-@media (max-width:400px){
-.nav a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 80;
-    color: white;
-    padding: 0;
-    font-size: 1em;
-     margin-left: auto;
-    margin-right: auto;
-    float: right;
-}
-}
-@media (max-width:400px){
-    .nav li {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    padding: 0px 5px 5px 5px;
-    font-size: 1em;
-    margin-left: auto;
-    margin-right: auto;
-        float: right;
-    }}
-
-@media (max-width:400px){
-    .navbar-header{
-    max-height: 200px; 
-    border: none;
-    background-color: lightgray;
-    width: 100%;
-    padding: 0;
-}
-}
- 
